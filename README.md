@@ -9,3 +9,7 @@ publisher_event is called 5x. For each call it sends `UserCreatedEventMessage` d
 <br>
 b. The url of: `amqp://guest:guest@localhost:5672` is the same as in the subscriber program, what does it mean?
 Having both programs have the url means they are connected to the same AMQP broker with identical credentials and address. The URL specifies the AMQP protocol, username, password, and the address + port of the broker. This makes it so both programs communicate through the same messaging system. It establishes a unified communication pathway for data exchange between the publisher and subscriber.
+<br>
+<br>
+Running RabbitMQ as Message Broker.
+![alt text](Screenshots/rabbitmq.png)
