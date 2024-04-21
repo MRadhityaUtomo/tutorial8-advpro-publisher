@@ -21,3 +21,8 @@ Running RabbitMQ as Message Broker.
 
 Screen show consoles after running publisher multiple times
 ![alt text](Screenshots/sending.png)
+After the publisher program is run, data from the publisher side (hardcoded via main code) will be sent through the message queue. The subscriber program will receive these data from the message queue and show the message of the data formatted above.
+
+Monitoring chart based on publisher
+![alt text](Screenshots/messagerates.png)
+The spikes show how there is a surge of message rates upon a certain timeframe. This is because cargo run was ran on the publisher program repeatedly. This will be visualized through the RabbitMQ message queue chart.
