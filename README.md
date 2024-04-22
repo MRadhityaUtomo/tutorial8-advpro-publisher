@@ -27,11 +27,3 @@ After the publisher program is run, data from the publisher side (hardcoded via 
 Monitoring chart based on publisher
 ![alt text](Screenshots/messagerates.png)
 The spikes or mounds show how there is a surge of message rates upon a certain timeframe. This is because cargo run was ran on the publisher program repeatedly. This will be visualized through the RabbitMQ message queue chart.
-
-<br>
-
-Cargo running publisher multiple times with sleep (Slow Subscriber)
-![alt text](Screenshots/spampublisher.png)
-The total number of queues are 51, peaking at a about 60 total queues. This is counting messages on hold due the influx of request from publisher being spammed, but subscriber can only process the messages one-by-one thus causing the high queue count. This also increases the prefetch count and adding more tasks for subscriber to handle, in essence it created a long line of requests.
-
-<br>
